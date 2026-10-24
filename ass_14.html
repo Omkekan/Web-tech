@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_style{
+        border: 2px solid;
+        margin: 15%;
+        width: 120px;
+        background-color: black;
+        border-radius: 20px;
+        }
+        .circle_red{
+            background-color: red;
+            border: 2px solid red;
+            border-radius: 103%;
+            width: 100px;
+            height: 100px;
+            margin-left: 7px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+
+        }
+        .circle_orange{
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 103%;
+            width: 100px;
+            height: 100px;
+            margin-left: 7px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+
+        }
+        .circle_green{
+            background-color: green;
+            border: 2px solid green;
+            border-radius: 103%;
+            width: 100px;
+            height: 100px;
+            margin-left: 7px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div_style">
+
+        <div class="circle_red" id="d1"></div>
+        <div class="circle_orange" id="d2"></div>
+        <div class="circle_green" id="d3"></div>
+
+    </div>
+
+    <script>
+        let signal = 1
+         function singnal(){
+           if(signal == 1){
+            document.getElementById("d1").style.backgroundColor = "red";
+            document.getElementById("d2").style.backgroundColor = "black";
+            document.getElementById("d3").style.backgroundColor = "black";
+
+            signal++;
+
+           }else if(signal == 2){
+            document.getElementById("d1").style.backgroundColor = "black";
+            document.getElementById("d2").style.backgroundColor = "orange";
+            document.getElementById("d3").style.backgroundColor = "black";
+
+                signal++;
+           }else{
+            document.getElementById("d1").style.backgroundColor = "black";
+            document.getElementById("d2").style.backgroundColor = "black";
+            document.getElementById("d3").style.backgroundColor = "green";
+
+                signal = 1;
+           
+        }   
+        }
+        setInterval(singnal,1000);
+    </script>
+</body>
+</html>

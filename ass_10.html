@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Address Form</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .fordiv {
+            width: 450px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkgreen;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid lightseagreen;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fordiv">
+
+        <h2>Address Form</h2>
+
+        <label for="temp">Temporary Address</label>
+
+        <input 
+            type="text" 
+            id="temp" 
+            placeholder="Enter temporary address"
+        >
+
+        <button type="button" onclick="submitPermanent()">
+            Same as Temporary Address
+        </button>
+
+        <label for="perm">Permanent Address</label>
+
+        <input 
+            type="text" 
+            id="perm" 
+            placeholder="Enter permanent address"
+        >
+
+    </div>
+
+
+    <script>
+
+        function submitPermanent() {
+
+            let temp_add = document.getElementById("temp").value;
+
+            document.getElementById("perm").value = temp_add;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

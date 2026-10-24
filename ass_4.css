@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* LOGO */
+.logo {
+    border: 2px solid green;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 8px 2px 5px black;
+    margin: 5px;
+}
+
+/* TITLE */
+.mytitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px black;
+}
+
+/* HEADER */
+header {
+    background-color: #a7ff7f4a;
+    border-bottom: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIRST LEFT */
+.firstleft {
+    border: 3px solid red;
+    width: 25%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* SECOND LEFT - FORM IS HERE */
+.Secoundleft {
+    border: 3px solid red;
+    width: 75%;
+    height: 300px;
+    float: left;
+    text-align: center;
+
+    /* SCROLL */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* FIRST RIGHT */
+.firstright {
+    border: 2px solid red;
+    width: 75%;
+    margin-left: 25%;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* SECOND RIGHT */
+.secoundright {
+    border: 2px solid red;
+    width: 25%;
+    margin-left: 25%;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* MARQUEE IMAGE */
+.marqueeImg {
+    height: 100px;
+    width: 300px;
+    border: 2px solid green;
+}
+
+.marqueeTag {
+    text-align: center;
+}
+
+/* IMAGES */
+.firstright img {
+    height: 130px;
+    width: 200px;
+    margin: 10px;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid green;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+/* LABEL */
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* INPUT, SELECT, TEXTAREA */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/* RADIO AND CHECKBOX */
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+}
+
+/* BUTTON */
+form button {
+    padding: 8px 20px;
+    margin-top: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BUTTON HOVER */
+form button:hover {
+    background-color: darkgreen;
+}

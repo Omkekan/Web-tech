@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-fluid{
+            margin: 15%;
+            border: 5px solid lightseagreen;
+            padding: 44px;
+        }
+        .input_style{
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+  <div class="container-fluid mt-2">
+    <form name="myform" onsubmit="return checkAll()">
+            <label for="" >Enter your Name:</label><br>
+            <input type="text" name="fname" class="input_style"><br><br>
+
+            <label for="" >Enter your Contact:</label><br>
+            <input type="text" name="fcont" class="input_style"><br><br>
+
+            <label for="" >Enter your Email:</label><br>
+            <input type="text" name="femail" class="input_style"><br><br>
+
+            <label for="" >Enter your Password:</label><br>
+            <input type="text" name="fpass" class="input_style"><br><br>
+
+            <label for="">Select your Qualificaton:</label><br>
+            <input type="checkbox" name="edu" value="ssc">SSC
+            <input type="checkbox" name="edu" value="hsc">HSC
+            <input type="checkbox" name="edu" value="ug">UG
+            <input type="checkbox" name="edu" value="pg">PG <br>
+            
+            <label for="">Select your Course:</label>
+            <select name="course" id="">
+              <option value="">select your course</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="html">HTML</option>
+              <option value="html">HTML</option>
+            </select><br>
+
+            <button type="submit">submit</button><br><br>
+
+    </form>
+  </div>
+  <script src="./ass_12.js"></script>
+</body>
+</html>
+
+<!-- contact/email/password -->

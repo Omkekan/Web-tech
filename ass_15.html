@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add List</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Main box */
+        .container {
+            width: 450px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        /* Input */
+        #input_id {
+            width: 65%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        #input_id:focus {
+            outline: none;
+            border: 2px solid lightseagreen;
+        }
+
+        /* Button */
+        button {
+            padding: 10px 15px;
+            margin-left: 5px;
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+        /* Horizontal line */
+        hr {
+            margin: 25px 0;
+            border: 0;
+            border-top: 2px solid lightseagreen;
+        }
+
+        /* List */
+        ul {
+            padding-left: 25px;
+        }
+
+        /* List items */
+        li {
+            background-color: #e8f8f5;
+            margin: 8px 0;
+            padding: 10px;
+            border-left: 4px solid lightseagreen;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div>
+            <input 
+                type="text" 
+                id="input_id" 
+                placeholder="Write here"
+            >
+
+            <button type="button" onclick="add_list()">
+                Add in List
+            </button>
+        </div>
+
+        <hr>
+
+        <ul id="parent_ul">
+        </ul>
+
+    </div>
+
+
+    <script>
+
+        function add_list() {
+
+            let parent_ul_final = document.getElementById("parent_ul");
+
+            let newLi = document.createElement("li");
+
+            newLi.innerText = document.getElementById("input_id").value;
+
+            parent_ul_final.appendChild(newLi);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

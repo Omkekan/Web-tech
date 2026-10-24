@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Counter</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Main counter box */
+        .counter-box {
+            width: 400px;
+            margin: 120px auto;
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid lightseagreen;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        /* Heading */
+        h1 {
+            color: darkgreen;
+            font-size: 30px;
+        }
+
+        /* Counter number */
+        #d1 {
+            color: red;
+            font-size: 40px;
+        }
+
+        /* Button container */
+        .buttons {
+            margin-top: 25px;
+        }
+
+        /* Buttons */
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightseagreen;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        /* Hover */
+        button:hover {
+            background-color: darkcyan;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="counter-box">
+
+        <div>
+            <h1>
+                Counter: <span id="d1">0</span>
+            </h1>
+        </div>
+
+        <div class="buttons">
+
+            <button type="button" onclick="counter_calling('I')">
+                Increment ++
+            </button>
+
+            <button type="button" onclick="counter_calling('D')">
+                Decrement --
+            </button>
+
+            <button type="button" onclick="counter_calling('R')">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let count = 0;
+
+        function counter_calling(id) {
+
+            if (id == 'I') {
+
+                count += 1;
+                document.getElementById("d1").innerHTML = count;
+
+            } 
+            else if (id == 'D') {
+
+                count -= 1;
+                document.getElementById("d1").innerHTML = count;
+
+            } 
+            else {
+
+                count = 0;
+                document.getElementById("d1").innerHTML = count;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

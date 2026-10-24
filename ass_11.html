@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+        }
+
+        #msg {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .input-box {
+            margin: 15px 0;
+        }
+
+        .input-box label {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+        }
+
+        .input-box input {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightseagreen;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body align="center">
+    <div >
+        <label for="" id="msg">Hello freinds, How are you freinds, good freinds</label><br><br>
+    </div>
+    <div>
+        <label for="">old text</label>
+        <input type="text" name="" id="old_text"><br><br>
+    </div>
+
+    <div>
+        <label for="">New text</label>
+        <input type="text" name="" id="new_text"><br><br>
+    </div>
+
+    <div>
+        <button type="button" onclick="replace()">Replace</button>
+        <button type="button" onclick="replace_all()">Replace All</button>
+    </div>
+
+<script>
+
+    function replace() {
+
+        let msg = document.getElementById("msg").innerHTML;
+        let old_text = document.getElementById("old_text").value;
+        let new_text = document.getElementById("new_text").value;
+
+        document.getElementById("msg").innerHTML =
+            msg.replace(old_text, new_text);
+    }
+
+
+    function replace_all() {
+
+        let msg = document.getElementById("msg").innerHTML;
+        let old_text = document.getElementById("old_text").value;
+        let new_text = document.getElementById("new_text").value;
+
+        document.getElementById("msg").innerHTML =
+            msg.replaceAll(old_text, new_text);
+    }
+
+</script>
+</body>
+</html>

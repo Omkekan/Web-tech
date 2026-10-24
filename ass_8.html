@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container" mt-2>
+        <img src="../Assests/momo.jpg" alt="Momo" id="img1"><br>
+        <label for="" id="momo_label">Momo</label>
+        <img src="../Assests/samosa.jpg" alt="Samosa" id="img2" style="display:none;"><br>
+        <label for="" id="samosa_label" style="display:none;">Samosa</label>
+        <br>
+
+        <button onclick="toggle()" type="button" class="btn btn-success">Toggle</button>
+    </div>
+
+    <script>
+        function toggle() {
+            let img1 = document.getElementById("img1"); 
+            let momo_label = document.getElementById("momo_label"); 
+
+            let img2 = document.getElementById("img2"); 
+            let samosa_label = document.getElementById("samosa_label"); 
+
+            if (img1.style.display === "none") {
+                img1.style.display = "block"; 
+                momo_label.style.display = "block";
+
+                img2.style.display = "none"; 
+                samosa_label.style.display = "none";
+                } 
+                else { 
+                img1.style.display = "none";
+                momo_label.style.display = "none";
+
+                img2.style.display = "block"; 
+                samosa_label.style.display = "block";
+                }
+        }
+    </script>
+</body>
+</html>
+
+

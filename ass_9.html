@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Clock</title>
+
+    <style>
+        #d1 {
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 353px;
+            width: 394px;
+            background-color: #d8f29b;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #d2 {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+
+    <div id="d2"></div>
+
+    <script>
+        function myclock() {
+
+            let dObj = new Date();
+
+            document.getElementById("d1").innerHTML =
+                dObj.toLocaleTimeString();
+        }
+
+      
+        myclock();
+        setInterval(myclock, 1000);
+          
+     
+    </script>
+
+</body>
+
+</html>
