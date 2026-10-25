@@ -1,0 +1,29 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "this is my node js api project  using mysql db",
+  "keywords": [
+    "api",
+    "rest",
+    "api",
+    "node",
+    "api",
+    "with",
+    "mysql"
+  ],
+  "license": "ISC",
+  "author": "Ajinkya Raut",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.24.5"
+  }
+}

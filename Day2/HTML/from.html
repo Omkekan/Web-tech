@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <label for="txt1">Enter your name:</label><br>
+        <input type="text" name="fname" id="txt1" minlength="2" maxlength="20" pattern="^[A-Za-z]{2,20}$" required ><br> <br> 
+        <label for="txt2">Enter your pass:</label><br>
+        <input type="password" name="pass" id="txt2" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$" required ><br> <br>
+        <label for="">Enter e-mail-id</label><br>
+        <input type="email" name="uemail" id="" required><br> <br>
+        <label for="">Your contact number</label><br>
+        <input type="tel" name="unumber" pattern="^[0-9]{10,11}$" required><br>  <br>
+        <label for="">Your age</label><br>
+        <input type="number" name="uage" min="18" max="60" required ><br> <br>
+        <label for="">Your DOB</label><br>
+        <input type="date" name="udob" required><br><br> 
+        <label for="">Select Your Gender</label><br>
+        <input type="radio" name="gender" value="male" required checked >Male
+        <input type="radio" name="gender" value="female" required>female
+        <input type="radio" name="gender" value="others" required>Others <br> <br>
+        <label for="">Select Your Course</label><br>
+        <input type="checkbox" name="course" value="html">HTML
+        <input type="checkbox" name="course" value="devops">Devops
+        <input type="checkbox" name="course" value="css">Css
+        <input type="checkbox" name="course" value="java">Java <br> <br>
+        <label for="">Select your education</label>
+        <select name="education"  id="">  <!--multiple to select multiple checkboxres-->>
+            <option value="">select</option>
+            <option value="ssc">SSC</option>
+            <option value="hsc">HSC</option>
+            <option value="ug">UG</option>
+            <option value="pg">PG</option>
+        </select><br> <br>
+        <label for="">fees</label>
+        <input type="text" name="fees" value="15000" readonly disabled> <br> <br>
+        <label for="">Feedback</label><br>
+        <textarea name="fees" id=""></textarea> <br> <br>
+        <button type="submit">submit</button> <br> <br>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>

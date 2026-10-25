@@ -1,0 +1,58 @@
+
+23/9/26
+CSS:-it is use to design web application.
+    -latest version css is css3
+    -css stand for Cascading Style sheet.
+
+    Q.what are the typess css.
+    Q.how to use css.
+    Ans: there are three to use css 
+    1.inline css: in starting tag we use style attribute with property and values.
+    2.internal css:in html file we use style tage and in that write css property value.
+    selector{
+        property:values;
+    }
+    3.external css: in this we create a seperate css file and import that css file in html file.
+    selector{
+        property:values;
+    }
+
+*Selector in Css:
+1. element name select: we use element name direclty.
+2. group selector : we make a group of element selectors and apply css property
+3. id selector(#): when we have to apply css property to an single element
+4. class selector(.): when we have to apply comman css property to an multiple element
+5.universal selector(*):when we have to all css property to all element.
+
+*border: a line drown around an element
+-in css to apply border we have to use border-style property 
+
+*box-Model:
+-content:it can be any text or image
+-padding:it is use to clear area between content and border
+-border:a line drown around an element.
+-margine:it is use to clear area outside border.
+
+*Box-sizing: it is use to keep element with fixed after applying padding and border to it.
+-it include element padding and border size in its actual width.
+
+*media-query: it allows user to apply different style rule to an element with different screen width.
+syntax: @media screen and(breakpoint){
+    css property
+}
+
+max-width:it will apply css property till max-width
+min-width:it will apply css property from min-width
+
+screen width >=1200px  :xl
+screen width >=992px   :lg
+screen width >=768px   :md
+screen width >=576px   :sm
+screen width <576px    :xsm
+
+*transform: it will move element to left,right,top and botton 
+*transition: it change css property smoothly.
+
+-display:flex; -it is use to manage element layout according to different screen width 
+-disp:flex property always apply to parent element
+

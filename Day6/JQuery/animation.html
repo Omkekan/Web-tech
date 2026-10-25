@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Animation</title>
+    <style>
+        .box{
+            position: relative;
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hello Hola Liho
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".box").click(function(){
+                $(this).animate({"left":"400px","border-radius":"50%","background-color":"red"},2000).css({"background-color":"violet"});
+            })
+        })
+    </script>
+
+
+</body>
+</html>

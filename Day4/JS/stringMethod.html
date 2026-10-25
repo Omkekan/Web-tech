@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+    <div id="d21"></div>
+    <div id="d22"></div>
+    <div id="d23"></div>
+    <script>
+        let msg = "You are all good students. You are bright students";
+        document.getElementById("d1").innerHTML = msg;
+        document.getElementById("d2").innerHTML = msg.length;
+        document.getElementById("d3").innerHTML = msg.toUpperCase();
+        document.getElementById("d4").innerHTML = msg.toLowerCase();
+        // for(let i=1;i<=15;i++){
+        //     document.getElementById("d"+i).innerHTML=msg;
+        // }
+        //Indexof()
+        document.getElementById("d5").innerHTML = msg.indexOf("students");
+        document.getElementById("d6").innerHTML = msg.indexOf("students", 20);
+
+        //lastIndexOf
+        document.getElementById("d7").innerHTML = msg.lastIndexOf("are");
+        document.getElementById("d8").innerHTML = msg.lastIndexOf("are", 29);
+        //search
+        document.getElementById("d9").innerHTML = msg.search("You");
+
+        //slice
+        document.getElementById("d10").innerHTML = msg.slice(5);
+        document.getElementById("d11").innerHTML = msg.slice(5, 20);
+        document.getElementById("d12").innerHTML = msg.slice(-10);
+        document.getElementById("d13").innerHTML = msg.slice(-10, -2);
+
+        //Substring
+        document.getElementById("d14").innerHTML = msg.substring(20);
+        document.getElementById("d15").innerHTML = msg.substring(15, 25);
+
+        //substr
+        document.getElementById("d16").innerHTML = msg.substr(10, 5);
+
+        //charAt()
+        document.getElementById("d17").innerHTML = msg.charAt(0);
+
+        //replace()
+        document.getElementById("d18").innerHTML = msg.replace("students", "Friends");
+        document.getElementById("d19").innerHTML = msg.replace(/students/g, "Friends");
+        document.getElementById("d20").innerHTML = msg.replace(/Students/ig, "Friends");
+
+        //replaceAll
+        document.getElementById("d21").innerHTML = msg.replaceAll("students", "Friends");
+
+        //split()
+        console.log(msg);
+        console.log(msg.split());
+        console.log(msg.split(" "));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+24/9/26
+
+Javascript:
+-it is use to add functionality into webapp.
+-it is loosely typed language.
+-it is interpreted language.
+
+*how to use Javascript
+1.internal js:in html page we use script tag and write js code in it.
+2.external js:in this we create a seperate js file and import it in html file by using script tag.
+
+*How to display Output in Javascript
+1.document.write():it display Output on webpage.it will display output in same line
+2.window.alert():it will display output in model popup window.
+3.console.log():it will display output in browser console or in the terminal.
+4.innerHTML or DOM(Document Object Model): display output inside an element or tag.
+
+Q.why js is called as loosely data type language
+-when we declare a variable in Javascript at the same we can determin its datatype.untill and unless we initialize it. 
+-in js we can store different data in same variable.
+
+*Variabels in java 
+-it is use to store data in it.
+-store data canbe change any time.
+-in js to declare a Variabels we can use var,let,const keyword.
+
+*var:
+-it create function scope variable.
+-we can use variable befare declaration of it.
+-we can perform re-declaration of variable 
+
+*let:
+-it create block scope variable.
+-we can not use variable befare declaration of it.
+-we can not perform re-declaration of variable.
+
+*const
+-it create constant variable,whoes value can not change during runtime
+-at the time variable declaration we have to initialize variable.
+
+
+*Hoisting: it is default Javascript behaviour which moves variable declaration at top of page.
+=================================================
+26/9/26
+How to access data from input control
+1.default function 
+2.parameterize mfunction
+3.ananymous function
+4.arrow function 
+5.optional parameterize function 
+6.rest parameterize function 
+
+*Array:
+-it is use to store multiple values with same datatype.
+-in array value store on index basis.
+-array index always start from zero.
+-array denoted by [];
+
+*Object :
+-it is use to store multiple values with different types.
+-in Object data store in key value paire formate 
+-if you want to access data outside object we need to write object.keyname
+-object data type denoted by {}
+
+*Array of Object 
+
+*JSON.Stringify():it convert object data into json type
+*JSON.Parse():it convert json data into js object.
+
+*String :
+-it is collection of character.
+-whatever we write inside "" or '' is consider as string data.
+-in string each character has index value.
+-in string index number start zero.
+-string data is immutable.
+-in string black space is also consider as character
+
+*find index numner from string
+1.indexOf(searchingString,StatrIndex):
+-it well return index of first occurences of searching string from index number.
+-it search string from left to right direction.
+-if searching is not available then it return -1
+
+2.lastIndexOf(searchingString,StartIndex):
+-it well return index first occurences of searching string from index number.
+-it search string from right to left direction.
+-if searching is not available then it return -1
+
+3.search(searchingString):
+-it well return index of first occurences of searching string.
+-it search string from left to right direction.
+-if searching is not available then it return -1.
+-it is fater than indexof method.
+
+*extract from index number 
+4.slice(startIndex,EndIndex):
+-it return partial part of string.
+-if we pass +ve index then it search string from left to right
+-if we pass -ve index then it search string from right to left
+
+5.subString(startIndex,EndIndex)
+-it return partial part of string.
+-if we pass +ve index then it search string from left to right.
+
+6.subStr(startIndex,totalNumberOfCharcter):
+-it return partial part of string.
+
+7.charAt(): it will return single character available on index.
+
+8.replace:
+ 
+9.split(seperator): it convert string data into array data
+
+*Date and Time in js 
+-if you want to insert date and time in Javascript for this first we have to create object Date Class and then we can access its all method.
+let dObj = new Date();
+
+sun=0,mon=1....sat=6
+Jan=0,feb=1....Dec=11
+Assignment11: display current moth by getting value from date class object and method.
+Assignment12: create and design Digital Clock.
+
+*Form validation in js 
+by using onsubmit event
+
+Assignment13: perform form validation for password,email,contact and select gender 
+=============================================
+Assignment list 
+1.create two Table with rowspan and colspan
+2.create bookmark link which will move to top header
+3.create Image as Link for 6 images
+4.Design website as given diagrame.
+5.Design website header with logo and Title
+6.Using bootstrap grid make card responsive for different screen
+7.Change multiple images by clicking on different button
+8.Toggle image Task
+9.create and design digital clock 
+10.create view and temporary address same as permanant.
+11.Replace and replaceall task with given design 
+12.perform form validation for password,email,contact and for gender              
+
+
+
+
+

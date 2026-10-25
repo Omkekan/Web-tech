@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <script>
+        //Default function
+        function def(){
+            console.log("Welcome to ait ycc");
+        }
+        def();
+        //2.Parametrized function
+        function para(num1,num2){
+            return num1+num2;
+        }
+        console.log(para("aj","inkya"));
+
+        //3.ananymous function:function which has no name 
+       let add= function(num1,num2){
+            return num1+num2;
+        }
+        console.log(add(50,67));
+
+        //4.arrow function:which has no name as well as no function keyword
+        let sub= (num1,num2)=>{
+            return num1-num2;
+        }
+        console.log(sub(50,30));
+
+        //5.optional parameterized Function : int his no need to pass paramter value
+
+         let fullName=(fname,lname,mname="",contact="")=>{
+            return fname+mname+lname+contact;
+         }   
+         console.log(fullName("Ajinkya "," Raut"));
+         console.log(fullName("Ajinkya "," Raut","G."));
+         console.log(fullName("Ajinkya "," Raut","G."," 1235898"));
+
+        //6.rest parameterized function: when we dont know how many parameter
+        // required to. in this we use  spread operator(...),it store data in it
+         let stdList=(...std)=>{
+            return std;
+         }
+         console.log(stdList("Ajinkya","Aman","Anand","Amar"))
+
+    </script>
+ 
+
+
+
+</body>
+</html>

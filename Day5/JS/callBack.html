@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-Back Function </title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div>Counter <span id="d2">:0</span></div>
+    <button type="submit" onclick="Increment()" id="b1">Incr</button>
+    <button type="submit" onclick="Decrement()" id="b2">Decr</button>
+    <button type="submit" onclick="reset()" id="b3">Reset</button>
+    <script>
+        // function greeting() {
+        //     // window.alert("Good Morning All");
+        //     document.getElementById("d1").innerHTML = "Good Morning Friends";
+        // }
+        // // greeting();
+        // setTimeout(greeting, 5000)
+        // setInterval(greeting,5000);
+        // let Counter = 0;
+        // function count() {
+        //     Counter+=1;
+        //     document.getElementById("d2").innerHTML=Counter
+
+        //     // let limit=10;
+        //     // if(Counter<limit){
+        //     //     Counter+=1;
+        //     // document.getElementById("d2").innerHTML=Counter;
+        //     // }
+        //     // else{
+        //     //     clearInterval();
+        //     // }
+        // }
+        // setInterval(count, 1000);
+        let count1=0
+        function Increment(){
+            count1+=1;
+            document.getElementById("d2").innerHTML=count1;
+        }
+        function Decrement(){
+            count1=count1-1;
+            document.getElementById("d2").innerHTML=count1;
+        }
+        function reset(){
+            count1=0;
+            document.getElementById("d2").innerHTML=count1;
+            document.getElementById("d2").innerHTML=count2;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        //object datatype
+        let student = {
+            id: 2, name: "Ajinkya", contact: 5457685, single: true,
+            address: {
+                city: "Jamkhed", state: "Maharashtra", pin: 413201
+            },
+            details: function () {
+                return `ID:${this.id} Name:${this.name} Contact:${this.contact} Single:${this.single}`;
+            }
+
+        }
+        console.log(student.id);
+
+        document.write("Id:" + student.id + " Name:" + student.name + " Contact:" + student.contact + " Single:" + student.single + "<br>");
+        document.write("<br>======================================<br>")
+
+
+
+        //template literal
+        document.write(`Id:${student.id} Name:${student.name} Contact:${student.contact} Single:${student.single} <br>`);
+        document.write(`City:${student.address.city} State:${student.address.state} pin:${student.address.pin} <br>`);
+
+        document.write("<br>======================================<br>")
+
+        document.write(student.details(), "<br>");
+
+        //Array Of Object
+
+        let emp = [
+            { id: 1, name: "Ramesh", post: "Devloper", salary: 85000 },
+            { id: 2, name: "Radha", post: "HR", salary: 85000 },
+            { id: 3, name: "Gopal", post: "CEO", salary: 85000 },
+            { id: 4, name: "Rani", post: "Manager", salary: 85000 },
+        ]
+        // document.write(`Id:${emp[0].id} Name:${emp[0].name} Post:${emp[0].post} Salary:${emp[0].salary} <br>`)
+        // document.write(`Id:${emp[1].id} Name:${emp[1].name} Post:${emp[1].post} Salary:${emp[1].salary} <br>`)
+        // document.write(`Id:${emp[2].id} Name:${emp[2].name} Post:${emp[2].post} Salary:${emp[2].salary} <br>`)
+        // document.write(`Id:${emp[3].id} Name:${emp[3].name} Post:${emp[3].post} Salary:${emp[2].salary} <br>`)
+        document.write("<br>======================================<br>")
+        for (let em of emp) {
+            document.write(`Id:${em.id} Name:${em.name} Post:${em.post} Salary:${em.salary} <br>`)
+        }
+        document.write("<br>======================================<br>")
+        //Convert data into json
+        let jsondata = JSON.stringify(student);
+        document.write(jsondata);
+        document.write("<br>======================================<br>")
+        //convert json into js object
+        let jsObjectData = JSON.parse(jsondata);
+        document.write(jsObjectData+"<br>");
+        document.write(jsObjectData.name);
+
+        
+
+
+    </script>
+</body>
+
+</html>

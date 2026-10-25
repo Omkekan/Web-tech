@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task15</title>
+</head>
+
+<body>
+    <!-- Task15 -->
+    <input type="text" name="fname" id="names" height="50px" width="300px">
+    <button type="submit" onclick="Add()">Add Item</button>
+    <ul id="ulist">
+
+    </ul>
+
+    <script>
+        //task15
+        function Add() {
+            let idata = document.getElementById("names").value;
+            console.log(idata);
+            let opdata = document.getElementById("ulist");
+            let newLi = document.createElement("li");
+            newLi.innerText = idata;
+            opdata.appendChild(newLi);
+        }
+    </script>
+
+</body>
+
+</html>

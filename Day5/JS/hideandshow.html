@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide&Show</title>
+    <style>
+        .box {
+            text-align: center;
+            border: 2px solid;
+            width: 50%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <img id="img1" src="../../images/doll.jpeg" alt=""> <br>
+        <button type="button" onclick="changeImg('none')">Hide</button>
+        <button type="button" onclick="changeImg('inline')">Show</button>
+    </div>
+
+    <script>
+        function changeImg(val) {
+            document.getElementById("img1").style.display = val;
+        }
+    </script>
+</body>
+
+</html>

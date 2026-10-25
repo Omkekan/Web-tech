@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="child1">Child1</p>
+        <p id="child2">Child2</p>
+    </div>
+    <hr>
+    <ul id="parent1">
+
+    </ul>
+
+    <!-- //task14 -->
+
+    <table border="" width="50%">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Post</th><th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <br>
+
+        <!-- Task15 -->
+         <input type="text" name="fname" id="names" height="50px" width="300px"> 
+         <button type="submit" onclick="Add()">Add Item</button>
+         <ul id="ulist">
+
+         </ul>
+    <script>
+
+        let parentEl = document.getElementById("parent");
+        console.log(parentEl);
+        //create new element
+        let newPara = document.createElement("p");
+        //set attribute to element
+        newPara.setAttribute("id", "child3")
+        //assign data to an element
+        newPara.innerText = "Child 3";
+        //add child element to parent
+        parentEl.appendChild(newPara);
+
+        let pEL = document.getElementById("parent1");
+        console.log(pEL);
+        let newLi = document.createElement("li");
+        newLi.setAttribute("id", "c3");
+        newLi.innerText = "Banana";
+        pEL.appendChild(newLi);
+
+        let fruits = ["Apple", "Mango", "Banana", "Grapes", "Chiku", "Watermelon"]
+        // let list= pEL.append(fruits);
+        // console.log(list);
+        for (let i = 0; i < fruits.length; i++) {
+            let newLi = document.createElement("li");
+            newLi.setAttribute("id", "c"+i);
+            newLi.innerText = fruits[i];
+            pEL.appendChild(newLi);
+        }
+
+        let emp=[
+            {id:1,name:"Roman",post:"CEO",salary:95000},
+            {id:2,name:"Wisely",post:"TL",salary:95000},
+            {id:3,name:"Ron",post:"TT",salary:95000},
+            {id:4,name:"Cena",post:"HR",salary:95000},
+            {id:5,name:"John",post:"Devops",salary:95000},
+            {id:6,name:"Nat",post:"Peon",salary:95000}
+        ]
+
+        let tableEl=document.getElementById("parentTable");
+        console.log(tableEl);
+        let tableHeadEl=document.getElementById("tableBody");
+        for(let i=0;i<emp.length;i++){
+            let newRow=document.createElement("tr");
+            newRow.innerHTML=`<td>${emp[i].id}</td> <td>${emp[i].name}</td><td>${emp[i].post}</td> <td>${emp[i].salary}</td>`;
+            tableHeadEl.appendChild(newRow);
+
+            // let newRow1=document.createElement("td");
+            // newRow1.innerHTML=`<td>${emp[i].name}</td>`;
+            // newRow.appendChild(newRow1);
+
+            // let newRow2=document.createElement("td");
+            // newRow2.innerHTML=`<td>${emp[i].post}</td>`;
+            // newRow.appendChild(newRow2);
+
+            // let newRow3=document.createElement("td");
+            // newRow3.innerHTML=`<td>${emp[i].salary}</td>`;
+            // newRow.appendChild(newRow3);
+        }
+        for(let e of emp){
+            let newRow=document.createElement("tr");
+            newRow.innerHTML=`<td>${e.id}</td><td>${e.name}</td><td>${e.post}</td><td>${e.salary}</td>`
+            tableHeadEl.appendChild(newRow);
+        }
+        //task15
+        function Add(){
+            let idata=document.getElementById("names").value;
+            console.log(idata);
+            let opdata=document.getElementById("ulist");
+            let newLi=document.createElement("li");
+            newLi.innerText=idata;
+            opdata.appendChild(newLi);
+        }
+    </script>
+</body>
+
+</html>

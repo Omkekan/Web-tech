@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>HideandshowJqery</title>
+    <style>
+        img{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img id="img1" src="../../images/doll.jpeg" alt="doll"><br>
+        <button type="button" id="btnhide">Hide</button>
+        <button type="button" id="btnshow">Show</button>
+        <button type="button" id="btntoggle">Toggle</button>
+    </center>
+    <hr>
+    <center>
+        <img src="../../images/key.jpeg" alt="" id="img2">
+    </center>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnhide").click(() => {
+                $("#img1").hide(2000);
+            });
+            $("#btnshow").click(() => {
+                $("#img1").show(2000);
+            });
+            $("#btntoggle").click(() => {
+                $("#img1").toggle(2000);
+            })
+
+            $("#img2").dblclick(function(){
+                $(this).hide(2000,window.alert("Image hide successfully"));                
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>

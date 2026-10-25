@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <script>
+        // create object of date class
+        let dobj = new Date();
+        document.getElementById("d1").innerHTML = dobj;
+        document.getElementById("d2").innerHTML = dobj.getDate();
+        document.getElementById("d3").innerHTML = dobj.getFullYear();
+        document.getElementById("d4").innerHTML = dobj.getHours();
+        document.getElementById("d5").innerHTML = dobj.getDay();
+
+        let today = dobj.getDay();
+        switch (today) {
+            case 0: {
+                document.getElementById("d6").innerHTML = "Sunday";
+                break
+            }
+            case 1: {
+                document.getElementById("d6").innerHTML = "Monday";
+                break
+            } case 2: {
+                document.getElementById("d6").innerHTML = "Tueday";
+                break
+            } case 3: {
+                document.getElementById("d6").innerHTML = "Wednesday";
+                break
+            } case 4: {
+                document.getElementById("d6").innerHTML = "Thursday";
+                break
+            } case 5: {
+                document.getElementById("d6").innerHTML = "Friday";
+                break
+            } case 6: {
+                document.getElementById("d6").innerHTML = "saturday";
+                break
+            }
+            default: {
+                document.getElementById("d6").innerHTML = "Invalid Day";
+            }
+        }
+
+        //Assignment 11
+        let month = dobj.getMonth();
+        switch (month) {
+            case 0: {
+                document.getElementById("d7").innerHTML = "January";
+                break
+            }
+            case 1: {
+                document.getElementById("d7").innerHTML = "February";
+                break
+            } 
+            case 2: {
+                document.getElementById("d7").innerHTML = "March";
+                break
+            } 
+            case 3: {
+                document.getElementById("d7").innerHTML = "April";
+                break
+            } 
+            case 4: {
+                document.getElementById("d7").innerHTML = "May";
+                break
+            } 
+            case 5: {
+                document.getElementById("d7").innerHTML = "June";
+                break
+            } 
+            case 6: {
+                document.getElementById("d7").innerHTML = "July";
+                break
+            }
+            case 7: {
+                document.getElementById("d7").innerHTML = "August";
+                break
+            }
+            case 8: {
+                document.getElementById("d7").innerHTML = "September";
+                break
+            }
+            case 9: {
+                document.getElementById("d7").innerHTML = "October";
+                break
+            }
+            case 10: {
+                document.getElementById("d7").innerHTML = "November";
+                break
+            }
+            case 11: {
+                document.getElementById("d7").innerHTML = "December";
+                break
+            }
+            default: {
+                document.getElementById("d7").innerHTML = "Invalid Day";
+            } 
+        }
+          //Assignment 12: digital clock
+            function myclock(){
+                let dObj=new Date();
+                document.getElementById("d8").innerHTML=dObj.toLocaleTimeString();
+            }
+            //myclock();
+            setInterval(myclock,1000);
+            //how to set date and time
+            let myDate=new Date("2015","01","08","10","30","45");
+            document.getElementById("d9").innerHTML=myDate;
+
+    </script>
+</body>
+
+</html>

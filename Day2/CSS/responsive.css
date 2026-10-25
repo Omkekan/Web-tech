@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.block{
+    border: 2px solid black;
+    float: left;
+    height: 150px;
+    width: 20%;
+    border-radius: 6px;
+    text-align: center;
+    background-color: lightpink;
+}
+.bl{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 33px;
+    background-color: burlywood;
+    transition: 3s transform;
+}
+.bl:hover{
+    background-color: aquamarine;
+    transform:scale(10);
+}
+/* .im{
+    border-radius: 50%;
+} */
+@media screen  and (max-width:992px) {
+    .block{
+        width: 25%;
+    }
+}
+@media screen  and (max-width:768जं) {
+    .block{
+        width: 33.33%;
+    }
+}
+@media screen  and (max-width:576px) {
+    .block{
+        width: 50%;
+    }
+}
+@media screen  and (max-width:335px) {
+    .block{
+        width: 100%;
+    }
+}

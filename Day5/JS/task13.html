@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task13</title>
+</head>
+<body>
+    <div>Counter <span id="d2">:0</span></div>
+    <button type="submit" onclick="Increment()" id="b1">Incr</button>
+    <button type="submit" onclick="Decrement()" id="b2">Decr</button>
+    <button type="submit" onclick="reset()" id="b3">Reset</button>
+    <script>
+        let count1=0
+        function Increment(){
+            count1+=1;
+            document.getElementById("d2").innerHTML=count1;
+        }
+        function Decrement(){
+            count1=count1-1;
+            document.getElementById("d2").innerHTML=count1;
+        }
+        function reset(){
+            count1=0;
+            document.getElementById("d2").innerHTML=count1;
+            document.getElementById("d2").innerHTML=count2;
+        }
+    </script>
+</body>
+</html>

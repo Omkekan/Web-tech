@@ -1,0 +1,136 @@
+22/9/26
+
+HTML:
+-it is use to create structure of web pages.
+-it is use to display data to user on browser.
+-latest version of html is html5. 
+-it stand for Hyper Text Markup Language.
+
+-it is tag basis language 
+<tag>  <----tag 
+-in html there two types of tag 
+1.paired tag :<starttag> </endtag>
+2.unpaired tag:<starttag>
+
+*How to create html page 
+create file with extension .htm or html 
+
+<DOCTYPE html> : it tell search engine it is html type of document belongs to version 5.
+head part: it contain external link and meta data in it.
+body : write information which we have to display on browser.
+
+*What is Element in HTML 
+-it contain starting tag to ending tag with  attribute and value.
+example:
+<StartTag attribute="value" > Content of information <EndTag>
+
+*attribute:
+-it gives aditional information about tag.
+-it always write in starting tag.
+-it write as key="value" paire formate.
+
+In html there are two types of Element
+1.block Element: the element which takes full width of its screen.
+                 -it start with new line.
+                 -ex: h1-h6,p,div,li,table
+
+2.inline Element:the element which takes required width of it.
+                 -it never start on new line.
+                 -ex: b,i,u,img,a,
+
+tested tag: writing one tag inside another
+
+hr tag 
+marquee tag : it makes Content scrollable 
+ behavior="alternate",scroll,slide
+
+*list in Html 
+-in html we have 3 types list 
+1.Ordered List (ol): types: 1,2,3,A,B,C,a,b,c,I,II,III,i,ii,iii
+2.Unordered list(ul):types : disc square,circle,none
+3.Description List(dl)
+           dt-define term 
+          dd-define description 
+
+Assignment: create nested List 
+
+*How to insert images in webpage 
+img tag is use to insert images 
+
+*Iframe tag: it is use to create small window on browser
+-using it we can insert google map 
+-using it we can insert youtube video. 
+-insert one website into another website. 
+
+strong: it is not only bold but also important 
+em :  it is not only italic but also important
+ins : it is not only underline but also important
+
+*How to create link in web page 
+-by using anchore tag we can create link 
+-link is use to navigate from one page to another webpage .
+
+
+*Table : 
+-it is collection of rows and columan 
+-in html table first we create row and then columan 
+
+Assignment1: create two table with colspan and rowspan
+Assignment2: create image as link for 6 mobile image.
+========================================================
+23/9/26
+
+*Form : 
+-it is usze to get data from user.
+-to suibmit forms data there are two method 
+1.get method:-when we have to submit non-confidential data.
+             -submited data will vissible in browser url 
+             -in browser url there character linitation that is 1024 character  
+
+2.post methhod: when we have to submit confidential data.
+               -submited data will not be vissible in browser url 
+               -there is no character limit.
+
+Label: it provide hint to user what data or information need to insert into input control
+input: it allows user to enter data in it.
+
+Checkbox: it allows user to select multiple option among multiple
+radio button :it allows user to select single option among multiple 
+
+-button types : there are four button types 
+1.button: it will act as normal button.
+2.submit: it is use to submit forms data.
+3.reset: it is use to reset forms data.
+4.menu: it is use to createw menu button.
+
+Q.What is difference between html and html5. 
+Q.what are the features of html5.
+
+1.symantic element introduce: the which has spesific meaning, ex: header,footer,section,aside,nav,address
+2.new tag,new attribute and new input type introduce:
+  new Tag: strong,em,ins,abbr,tbody,thead,address.
+  new attribute: minlength,maxlength,pattern,min,max 
+  new input type: email,password,tel,number,date,week,
+3.multimedia element introduce: we can insert audio and video in html page.
+4.API Introduce in html5: API(Application programming interface) it is small programe which is already developed,which we can use directly.
+ -Geolocation: it return user cuirrent position.
+              -to use this api in your device GPS must available
+ -Drag and Droup:it allows user to grab an object from one location and drag to another
+ -Web-Worker:it is small javascript code which execute in backenf of browser without affect its current execution.
+ -webStorage: it is use to store user data on browser
+             there are two types of webStorage
+       1.local storage:it is use to store user data permamnatly
+       2.session storage:it is use to store user data for limited time.      
+ -SSE(Server Sent Event):it allows user to get automatic update from server.
+
+ *Bookmark:
+
+
+
+
+
+
+
+
+
+

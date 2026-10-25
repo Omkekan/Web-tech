@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        img {
+            height: 600px;
+            width: 40%;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 10px;
+        }
+        .iname{
+            color: maroon;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        
+    </style>
+    <title>Task7</title>
+</head>
+
+<body>
+    <img src="../Assets/iphone 18pro.jpeg" alt="Iphone18pro" id="img1">
+    <h3 class="iname" id="iname1">Iphone18pro</h3>
+    <br>
+    <button type="button" class="btn btn-primary" onclick="nothing4a()">Nothing4a</button>
+    <button type="button" class="btn btn-primary" onclick="pixel10pro()">Pixel10pro</button>
+    <button type="button" class="btn btn-primary" onclick="s26ultra()">S26ultra</button>
+    <script>
+        function s26ultra(){
+            document.getElementById("img1").src="../Assets/s26ultra.jpeg";
+            document.getElementById("iname1").innerHTML="S26 Ultra";
+        }
+        function nothing4a(){
+            document.getElementById("img1").src="../Assets/nothing.jpeg";
+            document.getElementById("iname1").innerHTML="Nothing 4a";
+        }
+        function pixel10pro(){
+            document.getElementById("img1").src="../Assets/pixel10pro.jpeg";
+            document.getElementById("iname1").innerHTML="Pixel 10 pro";
+        }
+    </script>
+</body>
+
+</html>

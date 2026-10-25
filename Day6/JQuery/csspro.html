@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>CssProp</title>
+</head>
+
+<body>
+    <p id="d1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod voluptate adipisci ipsum autem,
+        exercitationem perferendis eius placeat error minus nisi temporibus illum velit est odio fugiat reiciendis
+        veritatis molestiae.
+    </p>
+
+    <hr>
+    <img id="img1" src="../../images/key.jpeg" alt="doll"><br>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#d1").mouseenter(function(){
+                $(this).css({"font-size":"25px","color":"blue","background-color":"aqua"});
+            });
+            $("#d1").mouseleave(function(){
+                $(this).css({"font-size":"20px","color":"red","background-color":"lightgray"});
+            });
+            $("#img1").mouseenter(function(){
+                $(this).css({"border-radius":"50%","border":"3px solid black","height":"300px","width":"300px"})
+            })
+            $("#img1").mouseleave(function(){
+                $(this).css({"border-radius":"40px"})
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>

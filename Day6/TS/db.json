@@ -1,0 +1,14 @@
+{
+     "products":[
+        {"id":220,"name":"Laptop","price":200000,"company":"Lenovo","quantity":65000},
+        {"id":221,"name":"Rice","price":200,"company":"Dawat","quantity":650},
+        {"id":222,"name":"Mobile","price":150000,"company":"Apple","quantity":61000},
+        {"id":223,"name":"Mango","price":5000,"company":"Hapus","quantity":100000},
+        {"id":224,"name":"Truck","price":7000000,"company":"Tata","quantity":100}
+     ],
+     "users":[
+        {"id":1,"uid":"admin","upass":"admin123"},
+        {"id":2,"uid":"hero","upass":"hero654"},
+        {"id":3,"uid":"king","upass":"king789"}
+     ]
+}

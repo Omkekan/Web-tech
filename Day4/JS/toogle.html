@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image</title>
+    <style>
+        div {
+            border: 5px solid brown;
+            width: 300px;
+            text-align: center;
+            justify-content: center;
+            padding: 7px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="d1" src="../Assets/pasta.jpeg" alt="pasta" height="300px" width="300px">
+        <h2 id="n1">Pasta</h2>
+        <button type="button" onclick="toggleImage()">Toogle Image</button>
+    </div>
+    <script>
+        let isPasta=true;
+        function  toggleImage(){
+            isPasta=!isPasta;
+            if(isPasta){
+                document.getElementById("d1").src="../Assets/chiken65.jpeg";
+                document.getElementById("n1").innerHTML="Chicken 65";
+            }
+            else{
+                document.getElementById("d1").src="../Assets/pasta.jpeg";
+                document.getElementById("n1").innerHTML="Pasta";
+            }
+        }
+    </script>
+</body>
+
+</html>

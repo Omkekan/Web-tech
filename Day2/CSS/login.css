@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 6px 2px 5px black;
+    margin: 5px;
+}
+.mytitle{
+    font-size: 30px;
+    font-weight: 700;
+    color: brown;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px black;
+}
+header{
+    background-color: antiquewhite;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

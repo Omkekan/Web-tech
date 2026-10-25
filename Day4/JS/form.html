@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return checkAll()">
+        <label for="">Enter fullName:</label>
+        <input type="text" name="fname" id=fname"> <br>
+        <!-- //task13 -->
+        <label for="">Enter email:</label>
+        <input type="email" name="uemail" id="uemail"><br>
+
+        <!-- Password -->
+         <label for="">Enter Password</label>
+         <input type="password" name="pass" id="pass"> <br>
+
+        <label for="">Select Your qualifiaction</label>
+        <input type="checkbox" name="edu" value="ssc">SSC
+        <input type="checkbox" name="edu" value="hsc">HSC
+        <input type="checkbox" name="edu" value="ug">UG
+        <input type="checkbox" name="edu" value="pg">PG <br>
+
+        <label for="">Select Your Course:</label>
+        <select name="course">
+            <option value="">select</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            <option value="java">Java</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="./form1.js"></script>
+</body>
+</html>

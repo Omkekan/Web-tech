@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES5</title>
+</head>
+
+<body>
+
+    <script>
+        //trim
+        let msg = "                 Hello Friends             ";
+        console.log(msg.trim());
+        console.log(msg.trimStart());
+        console.log(msg.trimEnd());
+        //Foreach(): it call another method once for each array element and it do not return any value or data
+        let std = ["wdf", "fgtg4t", "erggdsv", "regd", "ertfc"];
+        std.forEach((values, index) => {
+            document.write(index + "." + values + ",<br>")
+        })
+
+        //map()
+
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 18, 20, 22];
+        document.write(num);
+        document.write("<br>");
+
+        let mapOut = num.map((val, i) => {
+            return val * 2;
+        })
+        document.write(mapOut, "<br>");;
+
+        //filter();
+        let filterOut = num.filter((val, i) => {
+            return val % 2 == 0;
+        });
+        document.write(filterOut, "<br>");
+
+        //every();
+
+        let everyOut = num.every((val, i) => {
+            return val < 0;
+        })
+        document.write(everyOut, "<br>");
+
+        //some()
+
+        let someOut = num.some((val, i) => {
+            return val > 0;
+        })
+        document.write(someOut, "<br>");
+
+        //reduce() or : starts from  Left to Right
+
+        let reduceOut = num.reduce((prev, next) => {
+            return prev * next;
+        })
+        document.write(reduceOut, "<br>");
+
+        // reduceRight(): starts from   Right to Left
+        let reduceRightOut = num.reduceRight((prev, next) => {
+            return prev + next;
+        })
+        document.write(reduceRightOut, "<br>");
+
+    </script>
+
+
+
+</body>
+
+</html>
